@@ -2,7 +2,7 @@
 
 > **Team Name:** The Hamsters  
 > **Project Name:** BeHeard  
-> **Course:** User-Centered Design
+> **Course:** INST 362 User-Centered Design
 
 A mobile-first, animated portfolio website for The Hamsters' semester-long UCD project. The site showcases our problem statement, team members, and semester assignments as a living case study.
 
