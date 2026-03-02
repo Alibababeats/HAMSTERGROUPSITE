@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personas — BeHeard | The Hamsters</title>
+  <meta name="description" content="User personas for the BeHeard civic engagement project by The Hamsters." />
+
+  <!-- Google Fonts — Barlow (Trade Gothic alternative) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== TOP CENTER HAMBURGER MENU ===== -->
+  <div class="top-menu" id="top-menu">
+    <div class="top-menu-trigger">
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+    </div>
+    <div class="top-menu-dropdown">
+      <div class="dropdown-card">
+        <a href="index.html" class="dropdown-link">Home</a>
+        <a href="personas.html" class="dropdown-link active">Personas</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LEFT SIDEBAR — PERSONA NAMES ===== -->
+  <aside class="left-sidebar" id="left-sidebar">
+    <div class="sidebar-logo">
+      <a href="index.html" class="logo-link">Be<span class="logo-highlight">Heard</span></a>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <a href="#sam" class="sidebar-link active" data-section="sam">Sam</a>
+      <a href="#katherine" class="sidebar-link" data-section="katherine">Katherine</a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>&copy; 2026 The Hamsters</p>
+    </div>
+  </aside>
+
+  <!-- ===== MOBILE NAV TOGGLE ===== -->
+  <button class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Toggle sidebar">
+    <span class="mst-line"></span>
+    <span class="mst-line"></span>
+    <span class="mst-line"></span>
+  </button>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- Personas Hero -->
+    <section class="personas-hero">
+      <h1>Our <span>Personas</span></h1>
+      <p>Understanding the people we design for — real needs, real stories, real impact.</p>
+    </section>
+
+    <!-- ===== PERSONA 1: SAM ===== -->
+    <section id="sam" class="persona-section">
+      <div class="persona-card">
+        <div class="persona-identity">
+          <div class="persona-avatar"><img src="public/samimage.JPG" alt="Sam"></div>
+          <h2>Sam</h2>
+          <h3>Director of Communications and Community Engagement — Rockville, MD</h3>
+        </div>
+
+        <div class="persona-details">
+          <!-- Demographic Info -->
+          <div class="persona-column">
+            <h4>Demographic Info</h4>
+            <div class="sticky-notes">
+              <div class="sticky-note">42 years old</div>
+              <div class="sticky-note">Rockville resident</div>
+              <div class="sticky-note">Rockville community leader</div>
+            </div>
+          </div>
+
+          <!-- Tasks, Routines, Needs -->
+          <div class="persona-column">
+            <h4>Tasks, Routines, Needs</h4>
+            <div class="sticky-notes">
+              <div class="sticky-note">Oversee Rockville government social media</div>
+              <div class="sticky-note">Advise the mayor and city council</div>
+              <div class="sticky-note">Keep a finger on the pulse of community engagement</div>
+              <div class="sticky-note">Shares city news with the public</div>
+            </div>
+          </div>
+
+          <!-- Desired Outcomes -->
+          <div class="persona-column">
+            <h4>Desired Outcomes</h4>
+            <div class="sticky-notes">
+              <div class="sticky-note">To build a respectful community</div>
+              <div class="sticky-note">Cover issues and topics that are relevant to Rockville</div>
+              <div class="sticky-note">Serve all Rockville constituents</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PERSONA 2: KATHERINE ===== -->
+    <section id="katherine" class="persona-section">
+      <div class="persona-card">
+        <div class="persona-identity">
+          <div class="persona-avatar"><img src="public/katherineimage.JPG" alt="Katherine"></div>
+          <h2>Katherine</h2>
+          <h3>Student at Wooton High School</h3>
+        </div>
+
+        <div class="persona-details">
+          <!-- Demographic Info -->
+          <div class="persona-column">
+            <h4>Demographic Info</h4>
+            <div class="sticky-notes">
+              <div class="sticky-note">Life long Rockville resident</div>
+              <div class="sticky-note">17 years old</div>
+              <div class="sticky-note">Comes from a mixed family</div>
+              <div class="sticky-note">Rockville HS student</div>
+            </div>
+          </div>
+
+          <!-- Tasks, Routines, Needs -->
+          <div class="persona-column">
+            <h4>Tasks, Routines, Needs</h4>
+            <div class="sticky-notes">
+              <div class="sticky-note">Share concerns about school violations</div>
+              <div class="sticky-note">Participating in community engagements</div>
+              <div class="sticky-note">Has a part time job</div>
+              <div class="sticky-note">Attend classes and complete coursework</div>
+              <div class="sticky-note">They need a safe environment to be heard</div>
+              <div class="sticky-note">They need to find the time to participate in community engagement</div>
+            </div>
+          </div>
+
+          <!-- Desired Outcomes -->
+          <div class="persona-column">
+            <h4>Desired Outcomes</h4>
+            <div class="sticky-notes">
+              <div class="sticky-note">Build a safer environment</div>
+              <div class="sticky-note">Voice their opinions</div>
+              <div class="sticky-note">Participate in community events</div>
+              <div class="sticky-note">Community engagement during a time that works for them</div>
+              <div class="sticky-note">School hosts community engagement event</div>
+              <div class="sticky-note">An incentive to participate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-link">Be<span class="logo-highlight">Heard</span></span>
+            <p class="footer-tagline">A project by The Hamsters</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#problem">Problem</a>
+            <a href="index.html#team">Team</a>
+            <a href="index.html#assignments">Assignments</a>
+            <a href="personas.html">Personas</a>
+          </div>
+          <p class="footer-copy">&copy; 2026 The Hamsters. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="src/main.js" defer></script>
+</body>
+
+</html>

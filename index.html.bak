@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeHeard — The Hamsters | Project Portfolio</title>
+  <meta name="description"
+    content="BeHeard is a user-centered design project by The Hamsters, addressing civic engagement challenges for young adults in Rockville, MD." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <header id="site-header">
+    <nav id="main-nav">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">
+        <span class="logo-icon">🐹</span>
+        <span class="logo-text">BeHeard</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#problem" class="nav-link" data-section="problem">Problem</a></li>
+        <li><a href="#team" class="nav-link" data-section="team">Team</a></li>
+        <li><a href="#assignments" class="nav-link" data-section="assignments">Assignments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow animate-in">The Hamsters Present</p>
+      <h1 class="hero-title animate-in">
+        Be<span class="highlight">Heard</span>
+      </h1>
+      <p class="hero-subtitle animate-in">Empowering young adults in Rockville, MD to voice their opinions on the issues
+        that matter most.</p>
+      <a href="#problem" class="hero-cta animate-in">
+        Explore Our Work
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14" />
+          <path d="m19 12-7 7-7-7" />
+        </svg>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ===== PROBLEM STATEMENT SECTION ===== -->
+  <section id="problem" class="section problem-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Focus</p>
+        <h2 class="section-title">Problem Statement</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="problem-content">
+        <div class="problem-quote">
+          <blockquote>
+            <p>Young adults in Rockville, MD struggle to voice their opinions on school violence. They need to be
+              connected with opportunities to be heard.</p>
+          </blockquote>
+        </div>
+
+        <div class="problem-image-wrapper">
+          <img src="/problem_statement.png"
+            alt="Problem Statement breakdown showing Problem Domain (Civic engagement, Political participation, Local issues, School violence), Audience (Young adults, Concerned citizens, Local organizers, Local government), and Constraints (Lack of communication from local government, Poor information pipeline, Unclear where to start)"
+            class="problem-image" loading="lazy" />
+        </div>
+
+        <div class="problem-breakdown">
+          <div class="problem-card" id="card-domain">
+            <div class="problem-card-icon">🎯</div>
+            <h3>Problem Domain</h3>
+            <ul>
+              <li>Civic engagement</li>
+              <li>Political participation</li>
+              <li>Local issues</li>
+              <li>School violence</li>
+            </ul>
+          </div>
+          <div class="problem-card" id="card-audience">
+            <div class="problem-card-icon">👥</div>
+            <h3>Audience</h3>
+            <ul>
+              <li>Young adults</li>
+              <li>Concerned citizens</li>
+              <li>Local organizers</li>
+              <li>Local government</li>
+            </ul>
+          </div>
+          <div class="problem-card" id="card-constraints">
+            <div class="problem-card-icon">⚠️</div>
+            <h3>Constraints</h3>
+            <ul>
+              <li>Lack of communication from local gov</li>
+              <li>Poor information pipeline</li>
+              <li>Unclear where to start</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM SECTION ===== -->
+  <section id="team" class="section team-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Meet The Hamsters 🐹</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card-avatar">
+            <span>I</span>
+          </div>
+          <h3>Isaac Ditoro</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-avatar">
+            <span>A</span>
+          </div>
+          <h3>Ava Haghighi</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-avatar">
+            <span>E</span>
+          </div>
+          <h3>Eric Lopez Quintero</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-avatar">
+            <span>A</span>
+          </div>
+          <h3>Ali Salem</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-avatar">
+            <span>A</span>
+          </div>
+          <h3>Alexandra Veremeychik</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ASSIGNMENTS SECTION ===== -->
+  <section id="assignments" class="section assignments-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Journey</p>
+        <h2 class="section-title">Semester Assignments</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="assignments-timeline">
+        <div class="timeline-line"></div>
+
+        <div class="assignment-item">
+          <div class="assignment-marker">
+            <span>1</span>
+          </div>
+          <div class="assignment-card">
+            <span class="assignment-status status-complete">Complete</span>
+            <h3>Team Formation & Problem Statement</h3>
+            <p>Established our team "The Hamsters", defined our project "BeHeard", and crafted our problem statement
+              around civic engagement for young adults.</p>
+          </div>
+        </div>
+
+        <div class="assignment-item">
+          <div class="assignment-marker">
+            <span>2</span>
+          </div>
+          <div class="assignment-card">
+            <span class="assignment-status status-upcoming">Upcoming</span>
+            <h3>User Research</h3>
+            <p>Conducting interviews and surveys with young adults in Rockville, MD to understand their challenges with
+              civic engagement.</p>
+          </div>
+        </div>
+
+        <div class="assignment-item">
+          <div class="assignment-marker">
+            <span>3</span>
+          </div>
+          <div class="assignment-card">
+            <span class="assignment-status status-upcoming">Upcoming</span>
+            <h3>Personas & Scenarios</h3>
+            <p>Developing user personas and usage scenarios based on our research findings.</p>
+          </div>
+        </div>
+
+        <div class="assignment-item">
+          <div class="assignment-marker">
+            <span>4</span>
+          </div>
+          <div class="assignment-card">
+            <span class="assignment-status status-upcoming">Upcoming</span>
+            <h3>Prototyping & Design</h3>
+            <p>Creating wireframes and interactive prototypes for the BeHeard platform.</p>
+          </div>
+        </div>
+
+        <div class="assignment-item">
+          <div class="assignment-marker">
+            <span>5</span>
+          </div>
+          <div class="assignment-card">
+            <span class="assignment-status status-upcoming">Upcoming</span>
+            <h3>Usability Testing</h3>
+            <p>Testing our designs with real users and iterating based on feedback.</p>
+          </div>
+        </div>
+
+        <div class="assignment-item">
+          <div class="assignment-marker">
+            <span>6</span>
+          </div>
+          <div class="assignment-card">
+            <span class="assignment-status status-upcoming">Upcoming</span>
+            <h3>Final Presentation</h3>
+            <p>Presenting our complete case study and design solution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">🐹</span>
+          <span class="logo-text">BeHeard</span>
+          <p class="footer-tagline">A project by The Hamsters</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#problem">Problem</a>
+          <a href="#team">Team</a>
+          <a href="#assignments">Assignments</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 The Hamsters. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
