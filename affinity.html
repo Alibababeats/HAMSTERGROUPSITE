@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affinity Diagram — BeHeard | The Hamsters</title>
+  <meta name="description" content="Affinity diagram for BeHeard user research themes by The Hamsters." />
+
+  <!-- Google Fonts — Barlow (Trade Gothic alternative) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== TOP CENTER HAMBURGER MENU ===== -->
+  <div class="top-menu" id="top-menu">
+    <div class="top-menu-trigger">
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+    </div>
+    <div class="top-menu-dropdown">
+      <div class="dropdown-card">
+        <a href="index.html" class="dropdown-link">Home</a>
+        <a href="personas.html" class="dropdown-link">Personas</a>
+        <a href="affinity.html" class="dropdown-link active">Affinity Diagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LEFT SIDEBAR ===== -->
+  <aside class="left-sidebar" id="left-sidebar">
+    <div class="sidebar-logo">
+      <a href="index.html" class="logo-link">Be<span class="logo-highlight">Heard</span></a>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <a href="#overview" class="sidebar-link active" data-section="overview">Overview</a>
+      <a href="#model" class="sidebar-link" data-section="model">The Model</a>
+      <a href="#diagram" class="sidebar-link" data-section="diagram">Diagram</a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>&copy; 2026 The Hamsters</p>
+    </div>
+  </aside>
+
+  <!-- ===== MOBILE NAV TOGGLE ===== -->
+  <button class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Toggle sidebar">
+    <span class="mst-line"></span>
+    <span class="mst-line"></span>
+    <span class="mst-line"></span>
+  </button>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <section id="overview" class="affinity-hero">
+      <div class="container">
+        <p class="section-eyebrow">User Research Synthesis</p>
+        <h1>Affinity <span>Diagram</span></h1>
+      </div>
+    </section>
+
+    <section id="model" class="section affinity-model-section">
+      <div class="container">
+        
+        <div class="model-flowchart">
+          <h2 class="flowchart-title">Young Adults Engagement with government</h2>
+          
+          <div class="flowchart-container">
+            <!-- Node 1: Time -->
+            <div class="flowchart-node circle-node">
+              <span class="node-text">TIME</span>
+            </div>
+
+            <!-- Arrow 1 with text -->
+            <div class="flowchart-arrow-container">
+              <span class="arrow-text">Amount of time<br>online</span>
+              <div class="flowchart-arrow"></div>
+            </div>
+
+            <!-- Node 2: Accessibility -->
+            <div class="flowchart-node box-node">
+              <span class="node-text">ACCESSABILITY</span>
+            </div>
+
+            <!-- Arrow 2 with text -->
+            <div class="flowchart-arrow-container">
+              <span class="arrow-text">Reaction to being<br>informed</span>
+              <div class="flowchart-arrow"></div>
+            </div>
+
+            <!-- Node 3: Mental Health (spelled as in image) -->
+            <div class="flowchart-node box-node">
+              <span class="node-text">MENAL HEALTH</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="diagram" class="affinity-section">
+      <div class="container">
+        <div class="affinity-board">
+          <div class="affinity-board-header">TEAM 2 - THE HAMSTERS</div>
+
+          <div class="affinity-board-grid">
+            <aside class="brainstorm-lane">
+              <div class="lane-title">BRAINSTORM</div>
+              <div class="lane-notes">
+                <div class="affinity-note note-green">Social media is the largest news source for young adults</div>
+                <div class="affinity-note note-rose">Local vs national news</div>
+                <div class="affinity-note note-blue">Daily schedules</div>
+                <div class="affinity-note note-yellow">Doom scrolling</div>
+                <div class="affinity-note note-yellow">Needs multiple voices</div>
+                <div class="affinity-note note-green">High school students</div>
+                <div class="affinity-note note-mint">College students</div>
+                <div class="affinity-note note-yellow">School shooting concerns</div>
+                <div class="affinity-note note-yellow">Short attention span</div>
+                <div class="affinity-note note-yellow">Mental health stressors</div>
+              </div>
+            </aside>
+
+            <div class="group-lane">
+              <div class="lane-title">GROUP</div>
+
+              <div class="group-columns">
+                <article class="affinity-column">
+                  <h2>Time</h2>
+                  <div class="affinity-note note-yellow">Amount of social media</div>
+                  <div class="affinity-note note-yellow">Time engaged with news</div>
+                  <div class="affinity-note note-blue">Daily schedules</div>
+                  <div class="affinity-note note-rose">Doom scrolling</div>
+                  <div class="affinity-note note-yellow">Short attention span</div>
+                </article>
+
+                <article class="affinity-column">
+                  <h2>Accessibility</h2>
+                  <div class="affinity-note note-yellow">Public transportation</div>
+                  <div class="affinity-note note-yellow">Electronic hardware access</div>
+                  <div class="affinity-note note-yellow">Internet access</div>
+                  <div class="affinity-note note-yellow">Government resources</div>
+                  <div class="affinity-note note-yellow">Needs multiple voices</div>
+                  <div class="affinity-stack">
+                    <div class="affinity-note note-green">High school students</div>
+                    <div class="affinity-note note-mint">College Students</div>
+                  </div>
+                  <div class="affinity-note note-yellow">officer stationed at school</div>
+                </article>
+
+                <article class="affinity-column">
+                  <h2>Mental Health</h2>
+                  <div class="affinity-note note-yellow">Social media negative effects</div>
+                  <div class="affinity-note note-yellow">School overload</div>
+                  <div class="affinity-note note-yellow">Local and international news fear</div>
+                  <div class="affinity-note note-yellow">School shooting concerns</div>
+                  <div class="affinity-note note-yellow">Mental health stressors</div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-link">Be<span class="logo-highlight">Heard</span></span>
+            <p class="footer-tagline">A project by The Hamsters</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#problem">Problem</a>
+            <a href="index.html#team">Team</a>
+            <a href="index.html#assignments">Assignments</a>
+            <a href="personas.html">Personas</a>
+            <a href="affinity.html">Affinity Diagram</a>
+          </div>
+          <p class="footer-copy">&copy; 2026 The Hamsters. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>

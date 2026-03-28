@@ -185,4 +185,40 @@ function initGSAPAnimations() {
       opacity: 0, y: 50, duration: 0.8, delay: i * 0.2, ease: 'power2.out'
     });
   });
+
+  // Affinity diagram columns
+  gsap.utils.toArray('.affinity-column').forEach((column, i) => {
+    gsap.from(column, {
+      scrollTrigger: { trigger: column, start: 'top 88%' },
+      opacity: 0,
+      y: 45,
+      duration: 0.7,
+      delay: i * 0.12,
+      ease: 'power2.out'
+    });
+  });
+
+  // Affinity sticky notes
+  gsap.utils.toArray('.affinity-note').forEach((note, i) => {
+    gsap.from(note, {
+      scrollTrigger: { trigger: note, start: 'top 92%' },
+      opacity: 0,
+      scale: 0.95,
+      duration: 0.45,
+      delay: i * 0.02,
+      ease: 'power1.out'
+    });
+  });
+
+  // Flowchart nodes
+  gsap.utils.toArray('.flowchart-node').forEach((node, i) => {
+    gsap.from(node, {
+      scrollTrigger: { trigger: node, start: 'top 85%' },
+      opacity: 0,
+      scale: 0.8,
+      duration: 0.8,
+      delay: i * 0.15,
+      ease: 'back.out(1.7)'
+    });
+  });
 }
