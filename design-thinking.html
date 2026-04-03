@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Assumptions & Design Thinking — BeHeard | The Hamsters</title>
+  <meta name="description" content="User assumptions and design thinking for BeHeard by The Hamsters." />
+
+  <!-- Google Fonts — Barlow -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/style.css" />
+  <style>
+    .dt-hero {
+      padding: var(--space-4xl) 0 var(--space-2xl);
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 40%, rgba(249, 115, 22, 0.06) 0%, var(--clr-bg-primary) 65%);
+    }
+    .dt-hero h1 {
+      font-size: var(--fs-4xl);
+      font-weight: 900;
+      margin-bottom: var(--space-md);
+    }
+    .dt-hero h1 span {
+      color: var(--clr-accent);
+    }
+    .image-container {
+      margin: var(--space-2xl) auto;
+      max-width: 900px;
+      padding: var(--space-lg);
+      background: var(--clr-bg-glass);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+    .image-container img {
+      width: 100%;
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-sm);
+    }
+    .image-caption {
+      text-align: center;
+      color: var(--clr-text-secondary);
+      font-size: var(--fs-md);
+      margin-bottom: var(--space-2xl);
+      padding: 0 var(--space-md);
+    }
+    .image-caption:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== TOP CENTER HAMBURGER MENU ===== -->
+  <div class="top-menu" id="top-menu">
+    <div class="top-menu-trigger">
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+    </div>
+    <div class="top-menu-dropdown">
+      <div class="dropdown-card">
+        <a href="index.html" class="dropdown-link">Home</a>
+        <a href="personas.html" class="dropdown-link">Personas</a>
+        <a href="affinity.html" class="dropdown-link">Affinity Diagram</a>
+        <a href="design-thinking.html" class="dropdown-link active">Design Thinking & Assumptions</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LEFT SIDEBAR ===== -->
+  <aside class="left-sidebar" id="left-sidebar">
+    <div class="sidebar-logo">
+      <a href="index.html" class="logo-link">Be<span class="logo-highlight">Heard</span></a>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <a href="#design-thinking" class="sidebar-link active" data-section="design-thinking">Design Thinking</a>
+      <a href="#assumptions" class="sidebar-link" data-section="assumptions">User Assumptions</a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>&copy; 2026 The Hamsters</p>
+    </div>
+  </aside>
+
+  <!-- ===== MOBILE NAV TOGGLE ===== -->
+  <button class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Toggle sidebar">
+    <span class="mst-line"></span>
+    <span class="mst-line"></span>
+    <span class="mst-line"></span>
+  </button>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <section class="dt-hero">
+      <div class="container">
+        <h1>Design Thinking & <span>User Assumptions</span></h1>
+        <p>Exploring foundational assumptions and creative design approaches.</p>
+      </div>
+    </section>
+
+    <!-- Design Thinking Section (Moved to first) -->
+    <section id="design-thinking" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Design Thinking</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="image-container">
+          <img src="/designthinking1.jpeg" alt="Design Thinking Part 1">
+          <p class="image-caption">This is what we came up with to reiterate our problem into the design thinking stage.</p>
+
+          <img src="/designthinking2.jpeg" alt="Design Thinking Part 2">
+          <p class="image-caption">These are our original 10 ideas.</p>
+
+          <img src="/designthinking3.jpeg" alt="Design Thinking Part 3">
+          <p class="image-caption">We chose to expand on the idea of having an app.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Assumptions Section (Moved to second) -->
+    <section id="assumptions" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">User Assumptions</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="image-container" style="display: flex; flex-direction: column; align-items: center; overflow: hidden; padding: var(--space-xl) var(--space-md);">
+          <img src="/userassumptions.jpeg" alt="User Assumptions" style="transform: rotate(-90deg); width: auto; max-width: 100%; max-height: 80vh; margin: var(--space-4xl) 0;">
+          <p class="image-caption">A deeper dive into our potential solutions and what we think the outcomes would be.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-link">Be<span class="logo-highlight">Heard</span></span>
+            <p class="footer-tagline">A project by The Hamsters</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="personas.html">Personas</a>
+            <a href="affinity.html">Affinity Diagram</a>
+            <a href="design-thinking.html">Design Thinking</a>
+          </div>
+          <p class="footer-copy">&copy; 2026 The Hamsters. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
